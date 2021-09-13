@@ -219,21 +219,21 @@ Youtube貼り付けここまで -->
               ------------------------------------------------------------->
               <div class="row">
 
-                <!-- STAGE3-1　ここから -->
+                <!-- STAGE2-1　ここから -->
                 <div class="column">
-                  <!-- STAGE3-1問題セクション　ここから -->
+                  <!-- STAGE2-1問題セクション　ここから -->
                   <figure class="image__container">
                     <img src="assets/images/謎3.jpg" alt="">
                   </figure>
-                  <!-- STAGE3-1問題セクション　ここまで -->
-                  <!-- STAGE3-1解答入力セクション　ここから -->
+                  <!-- STAGE2-1問題セクション　ここまで -->
+                  <!-- STAGE2-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1)"></answer-input>
                   <a class="link-hint" href="hint3.html" target="hint3">B君に相談する ></a>
-                  <!-- STAGE3-1解答入力セクション　ここまで -->
+                  <!-- STAGE2-1解答入力セクション　ここまで -->
                 </div><!-- /.column -->
-                <!-- STAGE3-1　ここまで -->
+                <!-- STAGE2-1　ここまで -->
 
-<!-- STAGE3-2 を追加
+<!-- STAGE2-2 を追加
 
                 <div class="column">
 
@@ -241,14 +241,14 @@ Youtube貼り付けここまで -->
                     <img src="assets/images/謎3.jpg" alt="">
                   </figure>
 
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q2']" v-on:answer-input="answerInput($event, 'stage2', 2)"></answer-input>
+                  <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                 　
                 </div>
 
-3-2追加ここまで -->
+2-2追加ここまで -->
                   
-<!-- STAGE3-3 を追加
+<!-- STAGE2-3 を追加
 
                 <div class="column">
 
@@ -256,12 +256,12 @@ Youtube貼り付けここまで -->
                     <img src="assets/images/謎3.jpg" alt="">
                   </figure>
 
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
+                  <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
 
                 </div>
 
-3-3追加ここまで -->
+2-3追加ここまで -->
 
               </div><!-- /.row -->
 
@@ -285,12 +285,12 @@ Youtube貼り付けここまで -->
       </div>
       <!-- STAGE3　ここまで -->
       <!-- STAGE4　ここから -->
-      <div v-if="next['stage3']" id="sectionStage4" class="stage">
+      <div v-if="next['stage4']" id="sectionStage4" class="stage">
 
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>出口の鍵を入手せよ！</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>出口の鍵を入手せよ！</h2>
             <p class="text-center">サラウンデスの部屋の壁に、<br>
               出口の部屋の鍵の形の絵と、鍵が4本置いてある。でかい・・・<br>
               4本のうち残り3本はダミー(偽物)だろう。出口の鍵の絵をもとに正解の鍵を見つけたい。</p>
@@ -307,11 +307,11 @@ Youtube貼り付けここまで -->
             <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>出口の鍵の数字</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
-              v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
+              v-on:answer-input="answerInput($event, 'stage4', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
-            <a class="link-hint" href="hint4.html" target="hint4">B君に相談する ></a>
+            <a class="link-hint" href="hint3.html" target="hint3">B君に相談する ></a>
           </div>
         </section>
         <!-- STAGE4-1解答入力セクション　ここまで -->
@@ -330,7 +330,7 @@ Youtube貼り付けここまで -->
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
-            <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage4']['q2']" v-on:answer-input="answerInput($event, 'stage4', 2, 'final')"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
@@ -350,9 +350,9 @@ STAGE4-2追加ここまで -->
 
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
 
-            <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage4']['q3']" v-on:answer-input="answerInput($event, 'stage4', 3, 'final')"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
