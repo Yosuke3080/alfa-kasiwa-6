@@ -223,7 +223,7 @@ Youtube貼り付けここまで -->
                 <div class="column">
                   <!-- STAGE2-1問題セクション　ここから -->
                   <figure class="image__container">
-                    <img src="assets/images/謎3.jpeg" alt="">
+                    <img src="assets/images/謎3.jpg" alt="">
                   </figure>
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
@@ -241,7 +241,7 @@ Youtube貼り付けここまで -->
                     <img src="assets/images/謎3.jpg" alt="">
                   </figure>
 
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q2']" v-on:answer-input="answerInput($event, 'stage2', 2)"></answer-input>
+                  <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
                 　
                 </div>
@@ -256,7 +256,7 @@ Youtube貼り付けここまで -->
                     <img src="assets/images/謎3.jpg" alt="">
                   </figure>
 
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
+                  <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3)"></answer-input>
                   <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
 
                 </div>
@@ -269,7 +269,7 @@ Youtube貼り付けここまで -->
           </div>
         </section>
 
-        <!-- STAGE2クリア画面　ここから -->
+        <!-- STAGE3クリア画面　ここから -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
@@ -283,19 +283,19 @@ Youtube貼り付けここまで -->
         </section>
         <!-- STAGE3クリア画面　ここまで -->
       </div>
-      <!-- STAGE2　ここまで -->
-      <!-- STAGE3　ここから -->
+      <!-- STAGE3　ここまで -->
+      <!-- STAGE4　ここから -->
       <div v-if="next['stage4']" id="sectionStage3" class="stage">
 
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>出口の鍵を入手せよ！</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>出口の鍵を入手せよ！</h2>
             <p class="text-center">サラウンデスの部屋の壁に、<br>
               出口の部屋の鍵の形の絵と、鍵が4本置いてある。でかい・・・<br>
               4本のうち残り3本はダミー(偽物)だろう。出口の鍵の絵をもとに正解の鍵を見つけたい。</p>
             <figure class="image__container">
-              <img src="assets/images/謎4.jpeg" alt="">
+              <img src="assets/images/謎4.jpg" alt="">
             </figure>
           </div>
         </section>
@@ -304,7 +304,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE4-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>出口の鍵の数字</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>出口の鍵の数字</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
@@ -361,7 +361,7 @@ STAGE4-3追加　ここまで -->
 
           
       </div>
-      <!-- STAGE3　ここまで -->
+      <!-- STAGE4　ここまで -->
 
     </div>
   </main>
