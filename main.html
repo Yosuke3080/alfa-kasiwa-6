@@ -183,7 +183,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__title">STAGE：2　クリア！</div>
               <div class="clear-message__content">>紙のナゾの答えは、どうやらこの書斎の本の番号のようだ。<br>
                 答えの番号の振られた本を開くと、なかに紙が挟まっていた。これもサラウンデスのサイン付きで。</div>
-                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -286,7 +286,6 @@ Youtube貼り付けここまで -->
       <!-- STAGE3　ここまで -->
       <!-- STAGE4　ここから -->
       <div v-if="next['stage3']" id="sectionStage4" class="stage">
-
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
@@ -311,7 +310,7 @@ Youtube貼り付けここまで -->
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">B君に相談する ></a>
+            <a class="link-hint" href="hint4.html" target="hint4">B君に相談する ></a>
           </div>
         </section>
         <!-- STAGE4-1解答入力セクション　ここまで -->
